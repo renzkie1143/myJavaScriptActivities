@@ -1,0 +1,100 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: grey;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+.main-container{
+    width: 50%;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+    border-style: groove;
+    background-image: linear-gradient(to bottom right,#24ABC6 ,#FF7649 );
+}
+h1{
+    font-size: 50px;   
+    color: rgb(88, 82, 82);
+}
+#input-to-do-list{
+    color: grey;
+    font-size: 25px;
+    border: 2px solid rgb(170, 170, 170);
+    border-radius: 4px;
+    padding: 6px;
+    outline:none;
+    border-color: rgb(135, 135, 148);
+    box-shadow: 0 0 8px 0 rgb(135, 135, 148);
+}
+#button-to-do-list{
+    font-size: 25px;
+    transition: 0.5s; 
+    border: none; 
+    margin-left: 25px; 
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    background:linear-gradient(#041cf3,rgb(247, 2, 2));
+    -webkit-background-clip:text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}   
+#button-to-do-list:hover{
+    background:linear-gradient(rgb(247, 2, 2),#041cf3);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;   
+}
+#to-do-list input{
+    font-size: 25px;
+    margin-right: 20px;
+}
+#to-do-list button{
+    font-size: 25px;
+}
+main{
+    padding-top: 20px;
+    margin-top: 25px;
+}
+section{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.edit{
+    font-size: 25px;
+    transition: 0.5s; 
+    border: none; 
+    cursor: pointer;
+    font-weight: bold;
+    background:linear-gradient(#041cf3,rgb(247, 2, 2));
+    -webkit-background-clip:text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.edit:hover{
+    background:linear-gradient(rgb(247, 2, 2),#041cf3);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.delete{
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    background-color: red;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.delete:hover{
+    background-color: #d10c0c;
+}
+.buttons{
+    padding-top: 3px;
+}
