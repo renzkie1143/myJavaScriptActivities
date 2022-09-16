@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+   
+}
+body.dark p{
+    color:white;   
+}
+body p{
+    font-weight: bold;
+}
+body.dark{
+    background-color: #292c35;
+}
+.checkbox{
+    opacity: 0;
+    position: relative;
+}
+
+.label{
+    background-color: #111;
+    justify-content: space-between ;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 50px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+    transform: scale(1.5);
+}
+.fa-moon{
+    color:#f1c40f;      
+}  
+.fa-sun{
+    color: #f1c40f;
+} 
+.ball{
+    background-color: #fff;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    position: absolute;
+    width: 22px;
+    transition: transform 0.2s linear;
+
+}
+.checkbox:checked + .label .ball{
+    transform: translateX(24px);/* moves the div that contains the ball id */
+}
