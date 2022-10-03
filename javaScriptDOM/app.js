@@ -2,14 +2,13 @@ let addBtn = document.querySelector("#addBtn");
 let inputField = document.querySelector("#inpuField");
 let toDoContainer = document.querySelector("#toDoContainer");
 let checker = [];
-let shit;
 addBtn.addEventListener("click",() =>{
 
     let toDoList = document.createElement("li");
     let output = document.createElement("output")
     output.innerHTML = inputField.value;
     output.classList.add("toDoList") 
-
+    // check the existing value if not exist it return -1
     let toDoListValue = output.innerHTML;
     let toDoListValueLowerCase = checker.findIndex(value => {
         return value.toLowerCase() === toDoListValue.toLowerCase();
