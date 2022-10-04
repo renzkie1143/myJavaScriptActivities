@@ -1,48 +1,101 @@
+:root{
+    --dark: #374151;
+    --darker: #1f2937;
+    --darkest: #111827;
+    --gray:#6B7280;
+    --light: #EEE;
+    --pink: #ec4899;
+    --purple: #8b5cf6;
+}
 *{
     margin: 0 auto;
     box-sizing: border-box;
+}
+body{
+    background-color: var(--dark);
+    color: var(--light);
 }
 .toDoListContent{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: grey;
     padding-bottom: 20px;
-    width: 40%;
+    width: 50%;
 }
 h1{
-    margin-top: 10px;
+    margin-top: 15px;
+    margin-bottom: 30px;
     text-align: center;
+    color: var(--darker);
+    font-weight: 700;
+    font-size: 40px;
 }
-#inputField{
-    width: 250px;
-    height: 46px;
+#inpuField{
+    background-color: var(--darker);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    color: var(--light);
+    font-size: 18px;
+    width: 100%;
+}
+input, button{
+    appearance: none;
+    border:none;
+    outline:none;
+    background: none;
 }
 #addBtn{
-    margin-left: 10px;
+    color: var(--pink);
+    font-size: 30px;
+    font-weight: 700;
+    background-image: linear-gradient(to right, var(--pink), var(--purple));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    transition: 0.4s;
+}
+#addBtn:hover{
+    opacity: 0.8;
+}
+#addBtn:active{
+    opacity: 0.6;
 }
 #toDoContainer{
     margin-top: 30px;
     font-size: 25px;
-    width: 100%;
+    width: 70%;
+    
 }
 .toDoList{
-    color: red;
+    font-size: 35px;
+    padding-left: 8px;
+    font-weight: 300;
+    color: var(--gray);
+   
+    
 }
 .input{
-    margin-top: 10px;
+   width: 70%;
+   display: flex;
 }
 output{
-
     margin-left: 15%;
 }
 .removeBtn{
     border-radius: 4px; 
     margin-top: 3px; 
     margin-right: 15%;
-    
+    color:crimson;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
 }
 li{
     list-style: none;
     display: flex;
+    background-color: var(--darker);
+    border-radius: 8px;
+    margin-bottom: 8px;
 }
