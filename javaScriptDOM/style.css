@@ -65,37 +65,61 @@ input, button{
 #toDoContainer{
     margin-top: 30px;
     font-size: 25px;
-    width: 70%;
-    
+    width: 70%;   
 }
 .toDoList{
-    font-size: 35px;
-    padding-left: 8px;
+    font-size: 25px;
     font-weight: 300;
-    color: var(--gray);
-   
+    color: var(--light); 
     
+}
+.toDoListChange{
+    font-size: 25px;
+    font-weight: 300;
+    text-decoration: line-through;
+    text-decoration-color: red;
 }
 .input{
    width: 70%;
    display: flex;
 }
 output{
-    margin-left: 15%;
+    float: left;
+
 }
 .removeBtn{
     border-radius: 4px; 
     margin-top: 3px; 
-    margin-right: 15%;
     color:crimson;
     font-size: 20px;
     font-weight: 700;
     cursor: pointer;
 }
+.doneBtn{
+    color: var(--pink);
+    font-size: 20px;
+    font-weight: 700;
+    background-image: linear-gradient(to right, var(--pink), var(--purple));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    transition: 0.4s;
+}
+#doneBtn:hover{
+    opacity: 0.8;
+}
+#doneBtn:active{
+    opacity: 0.6;
+}
 li{
     list-style: none;
-    display: flex;
-    background-color: var(--darker);
     border-radius: 8px;
     margin-bottom: 8px;
+   
+    /* display: flex; */
+    
+}
+.buttonDiv{
+    float: right;
 }
