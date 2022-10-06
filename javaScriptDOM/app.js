@@ -62,6 +62,14 @@ addBtn.addEventListener("click",() =>{
         let targetParentNode = findParentNode.parentNode;
         let innerValue = targetParentNode.querySelector(".toDoList");
         innerValue.classList.toggle("toDoListChange")
+
+    
+         
+         if (doneBtn.innerHTML != "Undone"){
+            doneBtn.innerHTML = "Undone"
+         }  else {
+            doneBtn.innerHTML = "Done"
+         }
     })
     
     return inputField.value = "";
